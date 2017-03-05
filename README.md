@@ -7,7 +7,7 @@
 
 #### To run the apllication:
 
-- Use PHP inbuilt web server functionality to run the API. Navigate to the /web folder and run the following command. 
+- Use PHP inbuilt web server functionality to run the API. Navigate to the `/web` folder and run the following command. 
  
  ```bash
 php -S localhost:8080
@@ -15,3 +15,9 @@ php -S localhost:8080
  ```
 
  Then access the webpage at `http://localhost:8080/translate/`
+
+In the root directory you can use:
+
+```bash
+php -S localhost:8080 -t web\
+```
