@@ -23,7 +23,7 @@ php -S localhost:8080
  ```
 #### Testing
 
-- To run the testsuite execute the following command:
+- To run the test suite execute the following command:
  
  ```bash
  ./vendor/phpunit/phpunit/phpunit --testdox
