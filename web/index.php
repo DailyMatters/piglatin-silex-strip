@@ -2,6 +2,8 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+use Symfony\Component\HttpFoundation\Response;
+
 $app = new \Silex\Application();
 
 $app['piglatin'] = function($app) {
@@ -9,10 +11,10 @@ $app['piglatin'] = function($app) {
 };
 
 //Instantiate a new service
-$app->get('/translate', function() use ($app){
-	$string = $app['piglatin']->convert("almond tomato crimson");
+$app->get('/translate/{string}', function($string) use ($app){
+	$string = $app['piglatin']->convert($string);
 
-	return $string;
+	return new Response($string);
 });
 
 $app->get('/about', function() use ($app){
