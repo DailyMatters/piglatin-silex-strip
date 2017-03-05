@@ -1,0 +1,12 @@
+{
+    "name": "silex/piglatin",
+    "require": {
+        "silex/silex": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "Cláudio Ribeiro",
+            "email": "claudio.santos.ribeiro@gmail.com"
+        }
+    ]
+}
