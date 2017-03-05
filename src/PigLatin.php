@@ -2,8 +2,6 @@
 
 namespace Piglatin;
 
-use Piglatin\Config;
-
 class Piglatin
 {
 

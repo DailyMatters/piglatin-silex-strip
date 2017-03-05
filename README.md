@@ -21,3 +21,17 @@ php -S localhost:8080
  ```bash
  php -S localhost:8080 -t web\
  ```
+#### Testing
+
+- To run the testsuite execute the following command:
+ 
+ ```bash
+ ./vendor/phpunit/phpunit/phpunit --testdox
+ ```
+
+ - To generate code coverage run one of the following commands:
+
+ ```bash
+./vendor/phpunit/phpunit/phpunit --testdox --coverage-text
+./vendor/phpunit/phpunit/phpunit --testdox --coverage-html <directory>
+ ```
