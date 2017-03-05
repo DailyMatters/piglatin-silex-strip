@@ -7,6 +7,7 @@ use Piglatin\Config;
 class Piglatin
 {
 
+	//Public variables
 	public $vowels = 'aeiou';
 	public $vowelTermination = "way";
 	public $consonants = 'b-df-hj-np-tv-z';
@@ -32,7 +33,7 @@ class Piglatin
 	}
 
 	/**
-	* Translates a word to pil latin 
+	* Translates a word to pig latin 
 	*
 	* @param string $input The word to translate
 	*
@@ -58,9 +59,7 @@ class Piglatin
 			}
 
 			if($this->startConsonant($input)){
-				//$input = preg_replace('/^([b-df-hj-np-tv-xz]*)([aeiouy].*)$/', "$2$1ay", $input);
-				$input = preg_replace('/^([b-df-hj-np-tv-z]*)([aeiouy].*)$/', "$2$1ay", $input);
-				//$input= preg_replace('(?i)(?|([aeiou][a-z]*)()|([b-df-hj-np-tv-xz]+)([aeiouy][a-z]*)|([y]+[b-df-hj-np-tv-xz]*)([aeiouy][a-z]*))', "$2$1ay", $input);
+				$input = preg_replace('/^([b-df-hj-np-tv-z]*)([aeiouy].*)$/', "$2$1ay", $input);;
 				return $input;
 			}
 		}
