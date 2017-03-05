@@ -16,8 +16,8 @@ php -S localhost:8080
 
  Then access the webpage at `http://localhost:8080/translate/`
 
-In the root directory you can use:
+ In the root directory you can use:
 
-```bash
-php -S localhost:8080 -t web\
-```
+ ```bash
+ php -S localhost:8080 -t web\
+ ```
