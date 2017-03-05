@@ -1,7 +1,8 @@
 {
     "name": "silex/piglatin",
     "require": {
-        "silex/silex": "^2.0"
+        "silex/silex": "^2.0",
+        "phpunit/phpunit": "^5.7"
     },
         "authors": [
         {
