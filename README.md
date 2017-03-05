@@ -29,9 +29,10 @@ php -S localhost:8080
  ./vendor/phpunit/phpunit/phpunit --testdox
  ```
 
- - To generate code coverage run one of the following commands:
+- To generate code coverage run one of the following commands:
 
  ```bash
 ./vendor/phpunit/phpunit/phpunit --testdox --coverage-text
+
 ./vendor/phpunit/phpunit/phpunit --testdox --coverage-html <directory>
  ```
