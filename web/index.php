@@ -17,6 +17,8 @@ $app->get('/translate/{string}', function($string) use ($app){
 	return new Response($string);
 });
 
+
+//This is just a test route, please ingore it
 $app->get('/about', function() use ($app){
 	return new \Symfony\Component\HttpFoundation\Response("This is the about page!");
 });
